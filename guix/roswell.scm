@@ -1,4 +1,4 @@
-(define-module (guix packages roswell)
+(define-module (guix roswell)
   #:use-module (guix packages))
 
 (define-public roswell
