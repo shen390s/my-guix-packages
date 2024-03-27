@@ -1,4 +1,4 @@
-(define-module (guix roswell)
+(define-module (guix packages roswell)
   #:use-module (guix packages)
   #:use-module (guix git-download)
   #:use-module (guix build-system gnu)
