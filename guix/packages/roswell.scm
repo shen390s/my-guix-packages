@@ -23,7 +23,7 @@
      (arguments
       `(#:tests? #false))
      (native-inputs
-      (list  autoconf automake libtool curl))
+      (list  autoconf automake libtool curl gcc))
      ;;(propagated-inputs (list sbcl))
      (home-page "https://github.com/roswell/roswell")
      (synopsis "Roswell is a Lisp implementation installer/manager, launcher, and much more!")
