@@ -1,4 +1,4 @@
-(define-module (guix packages roswell)
+(define-module (shen390s packages roswell)
   #:use-module (guix packages)
   #:use-module (gnu packages lisp)
   #:use-module (gnu packages gcc)
