@@ -5,13 +5,15 @@
   #:use-module (gnu packages autotools))
 
 (define-public roswell
+  (let ((commit "4c17a2b65314283839d382e52d47a44bb71e22b5"))
   (package
    (name "roswell")
    (version "23.10.14.114")
    (source (origin
 	    (method git-fetch)
 	    (uri (git-reference
-		  (url "https://github.com/roswell/roswell.git")))
+		  (url "https://github.com/roswell/roswell.git")
+		  (commit commit)))
 	    (sha256
 	     (base32 "1i3d9achbpczzrn0csjmjpzp013lpmd2qi97kg6invxgsprkv9pq"))))
    (build-system gnu-build-system)
