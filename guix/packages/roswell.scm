@@ -15,5 +15,17 @@
 	    (sha256
 	     (base32 "1i3d9achbpczzrn0csjmjpzp013lpmd2qi97kg6invxgsprkv9pq"))))
    (build-system gnu-build-system)
-   (propagated-inputs (list sbcl))))
+   (propagated-inputs (list sbcl))
+   (home-package "https://github.com/roswell/roswell")
+   (synopsis "Roswell is a Lisp implementation installer/manager, launcher, and much more!")
+   (description
+    "Roswell is a Lisp implementation installer/manager, launcher, and much more!
+
+Roswell started out as a command-line tool with the aim to make installing and managing Common Lisp implementations really simple and easy.
+
+Roswell has now evolved into a full-stack environment for Common Lisp development, and has many features that makes it easy to test, share, and distribute your Lisp applications. With Roswell, we aim to push the Common Lisp community to a whole new level of productivity.
+
+Roswell is still in beta. Despite this, the basic interfaces are stable and not likely to change. Roswell currently works well on Unix-like platforms such as Linux, macOS and FreeBSD. Roswell also works on other operating systems, but currently some parts or features might be missing or unstable.")
+   ;; MIT license
+   (license license:expat)))
   
