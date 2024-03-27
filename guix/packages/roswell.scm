@@ -17,7 +17,7 @@
 		    (url "https://github.com/roswell/roswell.git")
 		    (commit commit)))
 	      (sha256
-	       (base32 "1i3d9achbpczzrn0csjmjpzp013lpmd2qi97kg6invxgsprkv9pq"))))
+	       (base32 "1dxbdcnyi8pcymjadhnkxcrn3ls5w0izg01d1dmzw5qh2pi2v16p"))))
      (build-system gnu-build-system)
      ;;(propagated-inputs (list sbcl))
      (home-page "https://github.com/roswell/roswell")
