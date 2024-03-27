@@ -1,5 +1,6 @@
 (define-module (guix packages roswell)
   #:use-module (guix packages)
+  #:use-module (gnu packages lisp)
   #:use-module (guix git-download)
   #:use-module (guix build-system gnu)
   #:use-module ((guix licenses) #:prefix license:)
