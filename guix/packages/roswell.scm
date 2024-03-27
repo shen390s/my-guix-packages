@@ -1,6 +1,7 @@
 (define-module (guix packages roswell)
   #:use-module (guix packages)
   #:use-module (gnu packages lisp)
+  #:use-module (gnu packages gcc)
   #:use-module (guix git-download)
   #:use-module (guix build-system gnu)
   #:use-module (gnu packages curl)
