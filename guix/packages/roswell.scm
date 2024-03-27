@@ -20,7 +20,7 @@
 	       (base32 "1dxbdcnyi8pcymjadhnkxcrn3ls5w0izg01d1dmzw5qh2pi2v16p"))))
      (build-system gnu-build-system)
      (native-inputs
-      (list  autoconf automake libtool))
+      (list  autoconf automake libtool curl))
      ;;(propagated-inputs (list sbcl))
      (home-page "https://github.com/roswell/roswell")
      (synopsis "Roswell is a Lisp implementation installer/manager, launcher, and much more!")
