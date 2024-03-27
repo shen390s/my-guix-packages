@@ -19,7 +19,7 @@
 	      (sha256
 	       (base32 "1i3d9achbpczzrn0csjmjpzp013lpmd2qi97kg6invxgsprkv9pq"))))
      (build-system gnu-build-system)
-     (propagated-inputs (list sbcl))
+     ;;(propagated-inputs (list sbcl))
      (home-page "https://github.com/roswell/roswell")
      (synopsis "Roswell is a Lisp implementation installer/manager, launcher, and much more!")
      (description
