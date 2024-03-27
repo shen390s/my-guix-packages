@@ -3,6 +3,7 @@
   #:use-module (gnu packages lisp)
   #:use-module (guix git-download)
   #:use-module (guix build-system gnu)
+  #:use-module (gnu packages curl)
   #:use-module ((guix licenses) #:prefix license:)
   #:use-module (gnu packages autotools))
 
