@@ -8,7 +8,7 @@
   #:use-module (guix licenses)
   #:use-module (gnu packages bash))
 
-(define glibc-2.17
+(define-public glibc-2.17
   (package
     (name "glibc")
     (version "2.17")
@@ -25,7 +25,7 @@
     (home-page "https://www.gnu.org/software/libc/")
     (license lgpl2.0+)))
 
-(define gcc-with-glibc
+(define-public gcc-with-glibc
   (package
     (name "gcc")
     (version "10.2.0") ; Use the desired version of GCC
@@ -42,16 +42,16 @@
     (home-page "https://gcc.gnu.org/")
     (license lgpl2.0+)))
 
-(define-public gcc-glibc-toolchain
-  (package
-    (name "gcc-glibc-toolchain")
-    (version "1.0")
-    (source #f)
-    (build-system gnu-build-system)
-    (inputs (list gcc-with-glibc))
-    (native-inputs (list glibc-2.17))
-    (synopsis "Custom GCC toolchain with glibc 2.17")
-    (description "A GCC toolchain built with glibc 2.17.")
-    (home-page "https://github.com/shen390s")
-    (license lgpl2.0+)))
-
+;;(define-public gcc-glibc-toolchain
+;;  (package
+;;    (name "gcc-glibc-toolchain")
+;;    (version "1.0")
+;;    (source #f)
+;;    (build-system gnu-build-system)
+;;    (inputs (list gcc-with-glibc))
+;;    (native-inputs (list glibc-2.17))
+;;    (synopsis "Custom GCC toolchain with glibc 2.17")
+;;    (description "A GCC toolchain built with glibc 2.17.")
+;;    (home-page "https://github.com/shen390s")
+;;    (license lgpl2.0+)))
+;;
