@@ -46,7 +46,7 @@
   (package
     (name "gcc-glibc-toolchain")
     (version "1.0")
-    (source (local-file "path-to-your-local-source-directory"))
+    (source #f)
     (build-system gnu-build-system)
     (inputs (list gcc-with-glibc))
     (native-inputs (list glibc-2.17))
