@@ -62,6 +62,8 @@ RPC system.  Think JSON, except binary.  Or think Protocol Buffers, except faste
 						    (lambda* (#:key inputs outputs #:allow-other-keys)
 							     (system* "cmake" "--install" "../source/build"))))))
       (inputs (list ninja))
+      (propagated-inputs
+       (list capnp-1.1.0))
       (home-page "https://capnproto.org")
       (synopsis "Capability-based RPC and serialization system")
       (description
