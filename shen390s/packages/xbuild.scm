@@ -20,7 +20,7 @@
                     (commit commit)))
               (sha256
                (base32
-		"1rxjbvgmac8gjycssmxc0crp1gv5hvg0mxp0s5jmil22ahwh4ny3"))))
+		"10l8sfscr1xz2s23wqvm47bmisi6km0mz1l6l7ls492ai76y21vg"))))
      (build-system gnu-build-system)
      (arguments
       `(#:tests? #f))
