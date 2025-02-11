@@ -5,6 +5,7 @@
   #:use-module (gnu packages curl)
   #:use-module ((guix licenses) #:prefix license:)
   #:use-module (guix download)
+  #:use-module (shen390s packages capnp)
   #:use-module (gnu packages autotools))
 
 (define-public xbuild
@@ -25,8 +26,8 @@
       `(#:tests? #f))
      (inputs (list
 	      autoconf automake libtool))
-;;     (propagated-inputs
-;;      (list ))
+     (propagated-inputs
+      (list c-capnproto))
      (home-page "https://github.com/shen390s/xbuild")
      (synopsis "xbuild")
      (description
@@ -34,4 +35,4 @@
      (license license:expat))))
 
 
-;;xbuild
+xbuild
