@@ -9,7 +9,7 @@
   #:use-module (gnu packages autotools))
 
 (define-public xbuild
-  (let ((commit "932a1802d4208a75bcfdac16cdccdaa3569d13d8"))
+  (let ((commit "2ce5b7705ab12fbc2eacb7672cdb8fe78bbd6504"))
     (package
      (name "xbuild")
      (version "0.0.1")
@@ -20,7 +20,7 @@
                     (commit commit)))
               (sha256
                (base32
-		"170lg1a7qij6hc9l7nim84jqzn8shpwql39ja79dfnz497nkpzb3"))))
+		"127b3dgn5w3idf5a5m3in1cxkszs940zgxkc4hkf89hqyi1xy1v0"))))
      (build-system gnu-build-system)
      (arguments
       `(#:tests? #f))
