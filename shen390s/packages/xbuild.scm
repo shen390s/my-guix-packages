@@ -6,10 +6,13 @@
   #:use-module ((guix licenses) #:prefix license:)
   #:use-module (guix download)
   #:use-module (shen390s packages capnp)
+  #:use-module (gnu packages base)
+  #:use-module (gnu packages bash)
+  #:use-module (gnu packages commencement)
   #:use-module (gnu packages autotools))
 
 (define-public xbuild
-  (let ((commit "a4d035295286b58e916c906a61c24af2120b51b2"))
+  (let ((commit "82f8d80b4ffc0aef3fd71ff6f9ee1f6db4a95faf"))
     (package
      (name "xbuild")
      (version "0.0.1")
@@ -20,14 +23,14 @@
                      (commit commit)))
                (sha256
                 (base32
-      		"1mcn3aqsmy5jfgfycivnd97cxzxs5h9xgfjxrysad11ydhcj0k4c"))))
+      		"1c09ysjj00lamh1jmbmm9cr83xkcnxwsk2xhgxpqkn8jq4ndzpql"))))
      (build-system gnu-build-system)
      (arguments
       `(#:tests? #f))
      (inputs (list
 	      autoconf automake libtool))
      (propagated-inputs
-      (list c-capnproto))
+      (list c-capnproto gcc-toolchain-14 gnu-make bash))
      (home-page "https://github.com/shen390s/xbuild")
      (synopsis "xbuild")
      (description
