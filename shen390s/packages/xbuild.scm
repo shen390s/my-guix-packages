@@ -8,6 +8,7 @@
   #:use-module (shen390s packages capnp)
   #:use-module (gnu packages base)
   #:use-module (gnu packages bash)
+  #:use-module (gnu packages linux)
   #:use-module (gnu packages commencement)
   #:use-module (gnu packages autotools))
 
