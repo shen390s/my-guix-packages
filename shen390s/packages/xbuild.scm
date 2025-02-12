@@ -13,7 +13,7 @@
   #:use-module (gnu packages autotools))
 
 (define-public xbuild
-  (let ((commit "df6df4d0afc6f60207962b8260ec1e473978da32 "))
+  (let ((commit "df6df4d0afc6f60207962b8260ec1e473978da32"))
     (package
      (name "xbuild")
      (version "0.0.1")
