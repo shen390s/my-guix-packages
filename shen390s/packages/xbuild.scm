@@ -9,6 +9,8 @@
   #:use-module (gnu packages base)
   #:use-module (gnu packages bash)
   #:use-module (gnu packages linux)
+  #:use-module (gnu packages golang)
+  #:use-module (gnu packages readline)
   #:use-module (gnu packages commencement)
   #:use-module (gnu packages autotools))
 
@@ -31,7 +33,7 @@
      (inputs (list
 	      autoconf automake libtool))
      (propagated-inputs
-      (list c-capnproto gcc-toolchain-14 gnu-make bash strace go readline))
+      (list coreutils c-capnproto gcc-toolchain-14 gnu-make bash strace go readline linux-pam))
      (home-page "https://github.com/shen390s/xbuild")
      (synopsis "xbuild")
      (description
