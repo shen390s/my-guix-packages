@@ -12,6 +12,7 @@
   #:use-module (gnu packages golang)
   #:use-module (gnu packages readline)
   #:use-module (gnu packages commencement)
+  #:use-module (gnu packages onc-rpc)
   #:use-module (gnu packages autotools))
 
 (define-public xbuild
