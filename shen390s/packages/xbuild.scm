@@ -14,6 +14,7 @@
   #:use-module (gnu packages commencement)
   #:use-module (gnu packages onc-rpc)
   #:use-module (gnu packages mpi)
+  #:use-module (gnu packages pkg-config)
   #:use-module (gnu packages autotools))
 
 (define-public xbuild
