@@ -37,7 +37,7 @@
      (propagated-inputs
       (list coreutils c-capnproto gcc-toolchain-14
 	    gnu-make bash strace go readline linux-pam
-	    libtirpc hwloc))
+	    libtirpc hwloc pkg-config))
      (home-page "https://github.com/shen390s/xbuild")
      (synopsis "xbuild")
      (description
