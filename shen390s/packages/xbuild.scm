@@ -43,7 +43,7 @@
      (license license:expat))))
 
 (define-public xbuild
-  (let ((commit "d0955e170cdb30b39a5dd490fc31ee8995a00592"))
+  (let ((commit "9ce85581af9136bfa6cec0426f51aa6c90e7bc0b"))
     (package
      (name "xbuild")
      (version "0.0.1")
@@ -54,7 +54,7 @@
                      (commit commit)))
                (sha256
                 (base32
-      		"01px22y75vc85v8s7czxy8955012i9clijp64sj83j5l12y4x32q"))))
+      		"0xkqqiaml5nngcsjp4qvglczq0zkyigfylv1csidbs815yhnm363"))))
      (build-system gnu-build-system)
      (arguments
       `(#:tests? #f))
