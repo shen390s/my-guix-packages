@@ -17,6 +17,8 @@
   #:use-module (gnu packages pkg-config)
   #:use-module (gnu packages databases)
   #:use-module (gnu packages gcc)
+  #:use-module (gnu packages tls)
+  #:use-module (gnu packages serialization)
   #:use-module (gnu packages autotools))
 
 (define-public log4c
@@ -63,7 +65,8 @@
      (propagated-inputs
       (list coreutils c-capnproto gcc-toolchain-14
 	    gnu-make bash strace go readline linux-pam
-	    libtirpc hwloc pkg-config postgresql))
+	    libtirpc hwloc pkg-config postgresql
+	    openssl libyaml))
      (home-page "https://github.com/shen390s/xbuild")
      (synopsis "xbuild")
      (description
