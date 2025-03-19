@@ -3,7 +3,7 @@
 	     (guix utils)
              (guix build-system gnu))
 
-(define gdb-with-guile
+(define-public gdb-with-guile
   (package
     (inherit gdb)
     (name "gdb-with-guile")
