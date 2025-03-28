@@ -66,7 +66,7 @@
       (list coreutils c-capnproto gcc-toolchain-14
 	    gnu-make bash strace go readline linux-pam
 	    libtirpc hwloc pkg-config postgresql
-	    openssl libyaml))
+	    openssl libcyaml libuv elogind))
      (home-page "https://github.com/shen390s/xbuild")
      (synopsis "xbuild")
      (description
