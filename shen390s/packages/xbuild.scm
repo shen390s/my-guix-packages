@@ -19,6 +19,8 @@
   #:use-module (gnu packages gcc)
   #:use-module (gnu packages tls)
   #:use-module (gnu packages serialization)
+  #:use-module (gnu packages libevent)
+  #:use-module (gnu packages freedesktop)
   #:use-module (gnu packages autotools))
 
 (define-public log4c
@@ -74,5 +76,5 @@
      (license license:expat))))
 
 
-;;xbuild
+xbuild
 ;;log4c
