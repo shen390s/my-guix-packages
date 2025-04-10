@@ -6,6 +6,7 @@
   #:use-module (guix build-system gnu)
   #:use-module (gnu packages curl)
   #:use-module ((guix licenses) #:prefix license:)
+  #:use-module (gnu packages ncurses)
   #:use-module (gnu packages autotools))
 
 (define-public xmake
@@ -25,7 +26,7 @@
      (arguments
       `(#:tests? #false))
      (native-inputs
-      (list  autoconf automake libtool curl gcc))
+      (list  autoconf automake libtool curl gcc ncurses))
      ;;(propagated-inputs (list sbcl))
      (home-page "https://xmake.io")
      (synopsis "A cross-platform build utility based on Lua")
