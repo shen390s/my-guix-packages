@@ -36,7 +36,7 @@ RPC system.  Think JSON, except binary.  Or think Protocol Buffers, except faste
    (license license:expat)))
 
 (define-public c-capnproto
-  (let ((commit "1089ab8441b10765579d17ca519278a5c31dea0c"))
+  (let ((commit "main"))
     (package
      ;;(inherit capnproto)
      (name "c-capnproto")
@@ -48,7 +48,7 @@ RPC system.  Think JSON, except binary.  Or think Protocol Buffers, except faste
                     (commit commit)))
               (sha256
                (base32
-		"0jm7cknh59c4x8iwyg3gx0pjqh0mvprpi3xzq8084fp7ccdw90yv"))))
+		"07bczh264whs4r5l6ia7qwljr87fn63qrw7r78zbqyijzjdb5v6a"))))
      (build-system cmake-build-system)
      (arguments
       `(#:configure-flags (list "--preset=ci-linux_x86_64" "-DBUILD_TESTING=OFF" "-G" "Ninja")
@@ -73,4 +73,4 @@ RPC system.  Think JSON, except binary.  Or think Protocol Buffers, except faste
 
 
 ;; capnp-1.1.0
- ;; (list capnp-1.1.0 c-capnproto)
+;;(list capnp-1.1.0 c-capnproto)
