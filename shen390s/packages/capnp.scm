@@ -48,7 +48,7 @@ RPC system.  Think JSON, except binary.  Or think Protocol Buffers, except faste
                     (commit commit)))
               (sha256
                (base32
-		"09bms5jswj7v6s49ba051dck0w7h32v0whrs5kf6np740hrj8pd1"))))
+		"03wlyr3hzy2kxn3hmfwpwsw5538nwyg0103znnbnqzxfxg5zvjxg"))))
      (build-system cmake-build-system)
      (arguments
       `(#:configure-flags (list "--preset=ci-linux_x86_64" "-DBUILD_TESTING=OFF" "-G" "Ninja")
