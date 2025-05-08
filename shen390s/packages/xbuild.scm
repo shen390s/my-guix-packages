@@ -22,6 +22,7 @@
   #:use-module (gnu packages libevent)
   #:use-module (gnu packages freedesktop)
   #:use-module (gnu packages vim)
+  #:use-module (gnu packages sqlite)
   #:use-module (gnu packages autotools))
 
 (define-public log4c
@@ -69,7 +70,8 @@
       (list coreutils c-capnproto gcc-toolchain-14
 	    gnu-make bash strace go readline linux-pam
 	    libtirpc hwloc pkg-config postgresql
-	    openssl libcyaml libyaml libuv elogind xxd))
+	    openssl libcyaml libyaml libuv elogind xxd
+	    sqlite))
      (home-page "https://github.com/shen390s/xbuild")
      (synopsis "xbuild")
      (description
