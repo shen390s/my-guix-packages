@@ -25,29 +25,6 @@
   #:use-module (gnu packages sqlite)
   #:use-module (gnu packages autotools))
 
-(define-public log4c
-  (let ((commit "7cc4b20dd719530617fea6179872a6c0fe01bf76"))
-    (package
-     (name "log4c")
-     (version "1.2.4")
-     (source (origin
-	      (method git-fetch)
-	      (uri (git-reference
-		    (url "https://github.com/shen390s/log4c.git")
-		    (commit commit)))
-	      (sha256
-	       (base32
-		"1h9jaww7hvq738pf7ckqmj5hqcp3csi4p03r404w3rg86xwbgpa8"))))
-     (build-system gnu-build-system)
-     (arguments
-      `(#:tests? #f))
-     (native-inputs
-      (list autoconf automake libtool curl gcc))
-     (home-page "https://sourceforge.net/projects/log4c/files/log4c/")
-     (synopsis "")
-     (description "log4c is a library for logs for c")
-     (license license:expat))))
-
 (define-public xbuild
   (let ((commit "9ce85581af9136bfa6cec0426f51aa6c90e7bc0b"))
     (package
@@ -69,7 +46,7 @@
      (propagated-inputs
       (list coreutils c-capnproto gcc-toolchain-14
 	    gnu-make bash strace go readline linux-pam
-	    libtirpc hwloc pkg-config postgresql
+	    libtirpc `(,hwloc "lib") pkg-config postgresql
 	    openssl libcyaml libyaml libuv elogind xxd
 	    sqlite))
      (home-page "https://github.com/shen390s/xbuild")
@@ -79,5 +56,4 @@
      (license license:expat))))
 
 
-;;xbuild
-;;log4c
+;;(list xbuild)
