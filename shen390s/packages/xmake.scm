@@ -35,4 +35,4 @@
      ;; MIT license
      (license license:asl2.0))))
   
-;;xmake
+xmake
