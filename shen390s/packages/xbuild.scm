@@ -45,7 +45,7 @@
      (inputs (list
 	      autoconf automake libtool))
      (propagated-inputs
-      (list coreutils c-capnproto gcc-toolchain-14
+      (list coreutils c-capnproto gcc-toolchain:static
 	    gnu-make bash strace go readline linux-pam
 	    libtirpc `(,hwloc "lib") pkg-config postgresql
 	    openssl libcyaml libyaml libuv elogind xxd
