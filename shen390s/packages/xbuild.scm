@@ -37,7 +37,7 @@
                      (commit commit)))
                (sha256
                 (base32
-      		"0p00g5mnl5xnjh6l7ghlixwczsvjhwsbnbl05bkdy466q69s7x16"))))
+      		"1m5f6qa6z2r5yj83vwcciwm135gz9dngp2acad4j563qf9vii0l1"))))
      (build-system gnu-build-system)
      (arguments
       `(#:tests? #f))
@@ -56,4 +56,4 @@
      (license license:expat))))
 
 
-(list xbuild)
+;;(list xbuild)
