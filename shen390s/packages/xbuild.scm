@@ -23,6 +23,7 @@
   #:use-module (gnu packages freedesktop)
   #:use-module (gnu packages vim)
   #:use-module (gnu packages sqlite)
+  #:use-module (gnu packages package-management)
   #:use-module (gnu packages autotools))
 
 (define-public xbuild
@@ -44,7 +45,7 @@
      (inputs (list
 	      autoconf automake libtool))
      (propagated-inputs
-      (list coreutils c-capnproto gcc-toolchain-14
+      (list guix coreutils c-capnproto gcc-toolchain-14
 	    gnu-make bash strace go readline linux-pam
 	    libtirpc `(,hwloc "lib") pkg-config postgresql
 	    openssl libcyaml libyaml libuv elogind xxd
