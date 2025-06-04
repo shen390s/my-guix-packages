@@ -24,6 +24,7 @@
   #:use-module (gnu packages vim)
   #:use-module (gnu packages sqlite)
   #:use-module (gnu packages package-management)
+  #:use-module (gnu packages elf)
   #:use-module (gnu packages autotools))
 
 (define-public xbuild
@@ -51,7 +52,7 @@
 	    gnu-make bash strace go readline linux-pam
 	    libtirpc `(,hwloc "lib") pkg-config postgresql
 	    openssl libcyaml libyaml libuv elogind xxd
-	    sqlite))
+	    sqlite patchelf))
      (home-page "https://github.com/shen390s/xbuild")
      (synopsis "xbuild")
      (description
