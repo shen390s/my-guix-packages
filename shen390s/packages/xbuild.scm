@@ -17,6 +17,7 @@
   #:use-module (gnu packages pkg-config)
   #:use-module (gnu packages databases)
   #:use-module (gnu packages gcc)
+  #:use-module (gnu packages python)
   #:use-module (gnu packages tls)
   #:use-module (gnu packages serialization)
   #:use-module (gnu packages libevent)
@@ -46,13 +47,12 @@
      (inputs (list
 	      autoconf automake libtool))
      (propagated-inputs
-      (list coreutils c-capnproto
-	    ;;`(,gcc-toolchain-14 "static")
+      (list coreutils  c-capnproto
 	    gcc-toolchain-14
 	    gnu-make bash strace go readline linux-pam
 	    libtirpc `(,hwloc "lib") pkg-config postgresql
 	    openssl libcyaml libyaml libuv elogind xxd
-	    sqlite patchelf))
+	    sqlite patchelf python))
      (home-page "https://github.com/shen390s/xbuild")
      (synopsis "xbuild")
      (description
@@ -60,4 +60,4 @@
      (license license:expat))))
 
 
-;;(list xbuild)
+;; (list xbuild)
